@@ -7,24 +7,22 @@
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 30px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 2;
-  margin-top: 20px;
 }
 
 h3 {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 2;
-  margin-top: 20px;
 }
 
 h4, li{
@@ -35,9 +33,9 @@ h4, li{
 
 .box {
   background: var(--background2);
-  border-radius: 50px;
+  border-radius: 15px;
   margin: 10px 200px;
-  padding: 50px;
+  padding: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: left;
   line-height: 1.15;

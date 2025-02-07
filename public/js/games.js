@@ -85,8 +85,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function addLikedLabel(gameCard) {
-  var likedLabel = document.createElement('ion-icon');
-  likedLabel.name = 'heart';
+  var likedLabel = document.createElement('i');
+  likedLabel.className = 'fa-solid fa-star';
   gameCard.appendChild(likedLabel);
 }
 
@@ -104,16 +104,3 @@ function moveToLiked(card) {
 
   card.closest('a').classList.add('liked-game');
 }
-
-const textList = [
-  "hehe",
-];
-
-function getRandomText() {
-  const randomIndex = Math.floor(Math.random() * textList.length);
-  let randomText = textList[randomIndex];
-  const paragraph = document.getElementById("randomText");
-  paragraph.textContent = randomText;
-}
-
-window.onload = getRandomText();

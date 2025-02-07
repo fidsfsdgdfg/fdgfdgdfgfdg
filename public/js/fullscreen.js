@@ -43,13 +43,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function toggleLike(isLiked, currentPage) {
-    var heartButton = document.getElementById('likeButton');
-    var heartLogo = heartButton.querySelector('.heart-logo');
+    var starButton = document.getElementById('likeButton');
+    var starLogo = starButton.querySelector('.star-logo');
 
     if (isLiked) {
-      heartLogo.innerHTML = '<ion-icon name="heart" style="color: #e64553;"></ion-icon>';
+      starLogo.innerHTML = '<i class="fa-solid fa-star" style="color: yellow;"></i>';
     } else {
-      heartLogo.innerHTML = '<ion-icon name="heart-outline" style="color: var(--text);"></ion-icon>';
+      starLogo.innerHTML = '<i class="fa-regular fa-star" style="color: var(--text);"></i>';
     }
   }
 });

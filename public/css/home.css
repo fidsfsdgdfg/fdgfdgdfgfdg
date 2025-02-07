@@ -4,22 +4,20 @@ body {
 
 .main {
   margin-bottom: 10px;
-  margin-top: 70px;
+  margin-top: 100px;
   margin-left: 10px;
   margin-right: 10px;
-  padding: 50px;
+  padding: 10px 47px;
   text-align: center;
 }
 
 h1 {
-  font-size: 60px;
-  font-family: 'Montserrat';
-  padding: 0px 300px;
+  font-size: 80px;
+  padding: 0px 200px;
 }
 
 h2 {
   font-weight: 500;
-  font-family: 'Montserrat';
   font-size: 30px;
 }
 
@@ -233,7 +231,7 @@ h5 {
 
 @media screen and (max-width: 1000px) {
   h1 {
-    font-size: 50px;
+    font-size: 80px;
     padding: 0px 100px;
   }
 
@@ -258,13 +256,13 @@ h5 {
   }
 
   .main {
-    padding: 50px 20px;
+    padding: 10px 20px;
   }
 }
 
 @media screen and (max-width: 800px) {
   h1 {
-    font-size: 40px;
+    font-size: 60px;
     padding: 0px 30px;
   }
 
@@ -288,6 +286,6 @@ h5 {
   }
 
   .main {
-    padding: 50px 0px;
+    padding: 10px 0px;
   }
 }

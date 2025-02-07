@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
 
 :root {
-  --background: #181926;
-  --background2: #24273a;
-  --background3: #363a4f;
-  --theme: rgb(138, 173, 244);
-  --shadow: rgba(138, 173, 244, 0.5);
-  --text: #cad3f5;
-  --placeholder: #cad3f5;
-  --text-secondary: #181926;
-  --nav-btn: #1e2030;
+  --background: #161616;
+  --background2: #1e1e1e;
+  --background3: #262626;
+  --theme: #ffffff;
+  --shadow: rgba(255, 255, 255, 0.5);
+  --text: #b6b6b6;
+  --text-secondary: #000;
+  --nav-btn: #313131;
+  --placeholder: #757575;
 }
 
 * {
@@ -19,7 +19,6 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Inter', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   letter-spacing: 0 !important;
 }
-
 body {
   background: var(--background);
   font-weight: 400;
@@ -29,15 +28,13 @@ body {
   top: 0px;
   position: fixed;
   z-index: 999999;
-  margin: 0px;
-  background: var(--background);
+  margin: 15px 10%;
+  background: var(--background3);
   justify-content: space-between;
   height: 70px;
-  border-radius: 0px;
-  width: 100%;
-  border-bottom: 1px solid var(--theme);
+  border-radius: 20px;
+  width: 80%;
 }
-
 .nav,
 .nav .nav-links {
   display: flex;
@@ -49,32 +46,24 @@ a {
   text-decoration: none;
 }
 .nav .logo .logo-image {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
 }
 .nav .logo {
-  font-size: 18px;
-  font-weight: 700 !important;
+  font-size: 22px;
+  font-weight: 400 !important;
   letter-spacing: 0 !important;
   display: flex;
-  padding: 8px;
   align-items: center;
   gap: 8px;
-  border-radius: 10px;
   transition: 300ms;
-}
-.nav .logo:hover {
-  background: var(--background2);
-}
-.nav .logo:active {
-  transform: scale(0.95);
 }
 .nav .nav-links {
   column-gap: 20px;
   list-style: none;
 }
 .nav .nav-links a {
-  transition: 250ms;
+  transition: all 0.2s linear;
 }
 
 .nav .left {
@@ -83,25 +72,20 @@ a {
 }
 
 .nav .nav-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.nav .nav-btn-text {
-  font-weight: 700;
-  line-height: 1;
+  height: 48px;
+  width: 48px;
+  border: none;
+  background: var(--nav-btn);
+  font-size: 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 300ms;
+  color: var(--text);
 }
 
 .nav .nav-btn:hover {
-  background: var(--background2);
-}
-
-.nav .nav-btn:focus {
-  transition: 100ms;
-  transform: scale(0.95);
+  background: var(--theme);
+  color: var(--text-secondary);
 }
 
 .nav .navOpenBtn,
@@ -142,7 +126,7 @@ a {
 }
 
 .footer {
-  background: var(--background2);
+  background: var(--background3);
   color: var(--text);
   display: flex;
   padding: 10px;
@@ -151,7 +135,7 @@ a {
   overflow: hidden;
   flex-wrap: wrap;
   text-align: center;
-  margin: 20px 200px;
+  margin: 20px 300px;
   border-radius: 20px;
 }
 
@@ -173,8 +157,8 @@ a {
 }
 
 .footer h4 {
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 22px;
 }
 
 /* responsive */
@@ -194,7 +178,7 @@ a {
   }
 
   .footer {
-    margin: 20px 100px;
+    margin: 100px;
   }
 }
 
